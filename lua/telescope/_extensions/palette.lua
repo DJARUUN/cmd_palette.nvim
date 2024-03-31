@@ -13,7 +13,7 @@ end
 return telescope.register_extension({
     setup = function(ext_config, config) end,
     exports = {
-        colors = run,
+        palette = run,
     }
 })
 
