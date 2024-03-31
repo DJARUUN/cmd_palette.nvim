@@ -1,5 +1,6 @@
 local M = {}
 
+package.loaded["telescope.themes"] = nil
 local themes = require("telescope.themes")
 
 M.width = 85
@@ -20,6 +21,5 @@ function themes.palette(opts)
     }
     return vim.tbl_deep_extend("force", theme_opts, opts)
 end
-
 
 return M
