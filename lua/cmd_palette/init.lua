@@ -7,13 +7,12 @@ local action_state = require("telescope.actions.state")
 local entry_display = require("telescope.pickers.entry_display")
 local conf = require("telescope.config").values
 
--- package.loaded["lua.cmd_palette.helpers"] = nil
--- package.loaded["lua.cmd_palette.configs"] = nil
+package.loaded["cmd_palette.helpers"] = nil
+local helpers = require("cmd_palette.helpers")
+package.loaded["cmd_palette.configs"] = nil
+local configs = require("cmd_palette.configs")
 
 function M.show_palette(opts)
-    local configs = require("cmd_palette.configs")
-    local helpers = require("cmd_palette.helpers")
-
     opts = opts or {}
 
     pickers.new(opts, {
