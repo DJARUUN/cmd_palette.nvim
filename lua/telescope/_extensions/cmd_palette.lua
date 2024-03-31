@@ -6,9 +6,8 @@ end
 package.loaded["cmd_palette.init"] = nil
 local cmd_palette = require("cmd_palette.init")
 
-local run = function(opts)
-    table.insert(opts, require("telescope.themes").palette)
-    cmd_palette.show_palette(opts)
+local run = function()
+    cmd_palette.show_palette(require("telescope.themes").palette{})
 end
 
 return telescope.register_extension({
