@@ -8,7 +8,7 @@ end
 -- run(require("telescope.themes").palette{})
 
 return require("telescope").register_extension({
-    setup = setup,
+    setup = function(ext_config, config) end,
     exports = {
         command_palette = run,
     }
