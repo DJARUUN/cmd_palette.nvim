@@ -10,7 +10,7 @@ end
 return telescope.register_extension({
     setup = function(ext_config, config) end,
     exports = {
-        palette = run,
+        cmd_palette = run,
     }
 })
 

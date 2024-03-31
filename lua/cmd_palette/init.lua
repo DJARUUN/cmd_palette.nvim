@@ -8,9 +8,9 @@ local entry_display = require("telescope.pickers.entry_display")
 local conf = require("telescope.config").values
 
 -- package.loaded["lua.cmd_palette.helpers"] = nil
-local helpers = require("lua.cmd_palette.helpers")
+local helpers = require("cmd_palette.helpers")
 -- package.loaded["lua.cmd_palette.configs"] = nil
-local configs = require("lua.cmd_palette.configs")
+local configs = require("cmd_palette.configs")
 
 function M.show_palette(opts)
     opts = opts or {}
