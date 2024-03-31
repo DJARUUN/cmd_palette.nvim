@@ -4,8 +4,8 @@ if not has_telescope then
     error("cmd_palette.nvim requires telescope.nvim - https://github.com/nvim-telescope/telescope.nvim")
 end
 
-package.loaded["lua.cmd_palette.init"] = nil
-local init = require("lua.cmd_palette.init")
+package.loaded["lua.cmd_palette.nvim.init"] = nil
+local init = require("lua.cmd_palette.nvim.init")
 
 local run = function(opts)
     init.show_palette(opts)
