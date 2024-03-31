@@ -7,6 +7,7 @@ package.loaded["cmd_palette.init"] = nil
 local cmd_palette = require("cmd_palette.init")
 
 local run = function(opts)
+    table.insert(opts, require("telescope.themes").palette)
     cmd_palette.show_palette(opts)
 end
 

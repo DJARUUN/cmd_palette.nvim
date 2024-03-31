@@ -1,6 +1,5 @@
 local M = {}
 
-package.loaded["telescope.themes"] = nil
 local themes = require("telescope.themes")
 
 M.width = 85
