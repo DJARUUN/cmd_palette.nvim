@@ -7,10 +7,10 @@ local action_state = require("telescope.actions.state")
 local entry_display = require("telescope.pickers.entry_display")
 local conf = require("telescope.config").values
 
-package.loaded["lua.cmd_palette.nvim.helpers"] = nil
-local helpers = require("lua.cmd_palette.nvim.helpers")
-package.loaded["lua.cmd_palette.nvim.configs"] = nil
-local configs = require("lua.cmd_palette.nvim.configs")
+-- package.loaded["lua.cmd_palette.helpers"] = nil
+local helpers = require("lua.cmd_palette.helpers")
+-- package.loaded["lua.cmd_palette.configs"] = nil
+local configs = require("lua.cmd_palette.configs")
 
 function M.show_palette(opts)
     opts = opts or {}
